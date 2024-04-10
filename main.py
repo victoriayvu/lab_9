@@ -5,9 +5,10 @@ def start():
         if option == "1":
             num = int(input("Please enter your password to encode: "))
             encode()
+            print("Your password has been encoded and stored!")
         elif option == "2":
-            decode()
-            print(f"The encoded password is {num}, and the original password is {num}.")
+            decoder()
+            print(f"The encoded password is {xxx}, and the original password is {num}.")
         elif option == "3":
             break
 def menu():
