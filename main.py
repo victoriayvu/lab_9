@@ -1,29 +1,15 @@
-def encode(num):
-   new_number = ""
-   for digit in str(num):
-       add_three = str((int(digit) + 3) % 10)
-       new_number += add_three
-   return new_number
-def decoder(encoded):
-   result = ''
-   for digit in encoded:
-       new_digit = str((int(digit) - 3) % 10)
-       result += new_digit
-   return result
-
-
 def start():
     while True:
         menu()
         option = int(input("\nPlease enter an option: "))
-        if option == 1:
+        if option == "1":
             num = int(input("Please enter your password to encode: "))
-            encoded = encode(num)
+            encode()
             print("Your password has been encoded and stored!")
-        elif option == 2:
-            original = decoder(encoded)
-            print(f"The encoded password is {encoded}, and the original password is {original}.")
-        elif option == 3:
+        elif option == "2":
+            decoder()
+            print(f"The encoded password is {xxx}, and the original password is {num}.")
+        elif option == "3":
             break
 def menu():
     print("\nMenu")
