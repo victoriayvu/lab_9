@@ -1,3 +1,4 @@
+#
 def encode(num):
     new_number = ""
     for digit in str(num):
